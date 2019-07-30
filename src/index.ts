@@ -1,1 +1,1 @@
-console.log('hi');
+export const log = (value: unknown) => console.log(value);
