@@ -1,14 +1,20 @@
 {
-  "name": "utils",
+  "name": "@amoutonbrady/utils",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
   "description": "A personal utils package",
   "repository": "https://github.com/amoutonbrady/utils.git",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "clean": "rimraf ./pkg",
     "build": "pack build",
-    "publish": "pack publish"
+    "publish": "pack publish",
+    "version": "npm run build"
   },
   "devDependencies": {
     "@pika/pack": "^0.4.0",
@@ -16,6 +22,8 @@
     "@pika/plugin-build-web": "^0.5.1",
     "@pika/plugin-ts-standard-pkg": "^0.5.1",
     "@pika/types": "^0.5.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
   },
   "@pika/pack": {
