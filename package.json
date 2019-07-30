@@ -1,0 +1,34 @@
+{
+  "name": "utils",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
+  "description": "A personal utils package",
+  "repository": "https://github.com/amoutonbrady/utils.git",
+  "scripts": {
+    "build": "pack build",
+    "publish": "pack publish"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-node": "^0.5.1",
+    "@pika/plugin-build-web": "^0.5.1",
+    "@pika/plugin-ts-standard-pkg": "^0.5.1",
+    "@pika/types": "^0.5.1",
+    "typescript": "^3.5.3"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  }
+}
