@@ -13,7 +13,8 @@
   "scripts": {
     "clean": "rimraf ./pkg",
     "build": "pack build",
-    "publish": "pack publish",
+    "push": "np",
+    "publish": "run-s clean build push",
     "version": "npm run build"
   },
   "devDependencies": {
@@ -22,6 +23,7 @@
     "@pika/plugin-build-web": "^0.5.1",
     "@pika/plugin-ts-standard-pkg": "^0.5.1",
     "@pika/types": "^0.5.1",
+    "np": "^5.0.3",
     "npm-run-all": "^4.1.5",
     "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
