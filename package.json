@@ -1,6 +1,6 @@
 {
   "name": "@amoutonbrady/utils",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "main": "index.js",
   "license": "MIT",
   "author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
@@ -14,7 +14,7 @@
     "clean": "rimraf ./pkg",
     "build": "pack build",
     "push": "np",
-    "publish": "run-s clean build push",
+    "publish": "pack publish",
     "version": "npm run build"
   },
   "devDependencies": {
