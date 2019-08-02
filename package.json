@@ -1,6 +1,6 @@
 {
   "name": "@amoutonbrady/utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "license": "MIT",
   "author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
