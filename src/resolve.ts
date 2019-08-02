@@ -14,5 +14,5 @@
  * @author Alexandre Mouton-Brady
  */
 export const resolve = <TSuccess = any, TError = Error>(promise: Promise<TSuccess>) => promise
-    .then((data: TSuccess) => [null, data] as [null, TSuccess])
-    .catch((error: TError) => [error, null] as [TError, null]);
+    .then((data: TSuccess) => [undefined, data] as [undefined, TSuccess])
+    .catch((error: TError) => [error, undefined] as [TError, undefined]);
